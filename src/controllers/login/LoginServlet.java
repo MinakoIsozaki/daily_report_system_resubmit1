@@ -65,7 +65,7 @@ public class LoginServlet extends HttpServlet {
                     .setParameter("code", code)
                     .setParameter("pass", password)
                     .getSingleResult();
-        } catch (NoResultException ex) {}
+        } catch(NoResultException ex) {}
            em.close();
            if(e != null){
                check_result = true;
